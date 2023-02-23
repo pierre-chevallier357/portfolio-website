@@ -1,0 +1,70 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  justify-content: flex-start;
+  display: flex;
+  justify-content: space-between;
+  max-width: 80rem;
+  margin: 0 auto;
+  z-index: 1;
+  padding: 1.25rem;
+
+  .social-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    animation: slide-left 1.5s linear both;
+
+    @keyframes slide-left {
+      0% {
+        transform: translateX(-500px);
+        opacity: 0;
+        scale: 0.5;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+        scale: 1;
+      }
+    }
+  }
+
+  .contact-me {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(209 213 219);
+    animation: slide-right 1.5s linear both;
+
+    @keyframes slide-right {
+      0% {
+        transform: translateX(500px);
+        opacity: 0;
+        scale: 0.5;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+        scale: 1;
+      }
+    }
+
+    .get-in-touch {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    .contact-me {
+      .get-in-touch {
+        display: inline-flex;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: rgb(156 163 175);
+      }
+    }
+  }
+}
