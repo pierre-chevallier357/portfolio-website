@@ -1,0 +1,9 @@
+.particles {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 50px, black 200px);
+  mask-image: linear-gradient(to bottom, transparent 50px, black 200px);
+}

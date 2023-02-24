@@ -1,16 +1,13 @@
-import Header from './Header';
-import Script from 'next/script';
-import styles from './page.module.scss';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <Header />
       <main>
         <section>
-          <div id="particles-js" className={styles.particles} />
-          <h1>Hello world!</h1>
-          <Script src="particles.js" />
+          <Home />
         </section>
       </main>
     </>
