@@ -34,7 +34,7 @@
     flex-direction: row;
     align-items: center;
     cursor: pointer;
-    color: rgb(209 213 219);
+    color: var(--white);
     animation: slide-right 1.5s linear both;
 
     @keyframes slide-right {
@@ -63,7 +63,7 @@
         display: inline-flex;
         font-size: 0.875rem;
         line-height: 1.25rem;
-        color: rgb(156 163 175);
+        color: var(--white);
       }
     }
   }
