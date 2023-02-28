@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div id="particles-js" className="particles" />
       <h1>Hello world!</h1>
-      <Script src="particles.js" />
+      <Script src="particles.min.js" />
     </>
   );
 }
