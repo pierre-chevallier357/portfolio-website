@@ -14,10 +14,10 @@ export default function HamburgerButton() {
   }
 
   return (
-    <div className="hamburger-button" onClick={(e) => toggleMenuButton(e)}>
+    <button className="hamburger-button" onClick={(e) => toggleMenuButton(e)}>
       <span className="line"></span>
       <span className="line"></span>
       <span className="line"></span>
-    </div>
+    </button>
   );
 }
