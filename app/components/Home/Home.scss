@@ -2,6 +2,7 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
+  pointer-events: none;
   top: 0;
   left: 0;
   -webkit-mask-image: linear-gradient(to bottom, transparent 3.125rem, black 12.5rem);
