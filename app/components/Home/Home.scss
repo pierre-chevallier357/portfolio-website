@@ -2,13 +2,9 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   -webkit-mask-image: linear-gradient(to bottom, transparent 3.125rem, black 12.5rem);
   mask-image: linear-gradient(to bottom, transparent 3.125rem, black 12.5rem);
-}
-
-.title {
-  z-index: 1;
-  position: relative;
 }
