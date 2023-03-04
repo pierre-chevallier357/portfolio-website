@@ -19,29 +19,29 @@ export default function Header() {
   return (
     <header>
       <nav className="navbar">
-        <Link href="/">
-          <Image src={pierreDrawing} alt="Dessin simplifié de Pierre" className="pierre-drawing" />
+        <Link href="/" className="logo-link">
+          <Image src={pierreDrawing} alt="Dessin simplifié de Pierre" className="logo" />
         </Link>
-        <div className="links-wrapper">
-          <Link href="/" onClick={closeMenu}>
+        <div className={isMenuOpened ? 'links-wrapper active' : 'links-wrapper'}>
+          <Link href="/" onClick={closeMenu} className="link">
             Accueil
           </Link>
-          <Link href="" onClick={closeMenu}>
+          <Link href="" onClick={closeMenu} className="link">
             À propos
           </Link>
-          <Link href="" onClick={closeMenu}>
+          <Link href="" onClick={closeMenu} className="link">
             Compétences
           </Link>
-          <Link href="" onClick={closeMenu}>
+          <Link href="" onClick={closeMenu} className="link">
             Expériences
           </Link>
-          <Link href="" onClick={closeMenu}>
+          <Link href="" onClick={closeMenu} className="link">
             Projets
           </Link>
-          <Link href="" onClick={closeMenu}>
+          <Link href="" onClick={closeMenu} className="link">
             Études
           </Link>
-          <Link href="" onClick={closeMenu}>
+          <Link href="" onClick={closeMenu} className="link">
             Contact
           </Link>
         </div>
