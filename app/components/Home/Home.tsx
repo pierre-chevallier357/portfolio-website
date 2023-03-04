@@ -4,8 +4,8 @@ import './Home.scss';
 export default function Home() {
   return (
     <>
+      <h1 className="title">Hello world!</h1>
       <div id="particles-js" className="particles" />
-      <h1>Hello world!</h1>
       <Script src="home/particles/particles.min.js" />
     </>
   );
