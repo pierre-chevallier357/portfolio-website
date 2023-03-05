@@ -5,6 +5,21 @@ import pierreDrawing from '/public/header/pierre-drawing.png';
 import Link from 'next/link';
 import { useState } from 'react';
 
+interface NavLink {
+  href: string;
+  text: string;
+}
+
+const navLinks: NavLink[] = [
+  { href: '/', text: 'Accueil' },
+  { href: '/', text: 'À propos' },
+  { href: '/', text: 'Compétences' },
+  { href: '/', text: 'Expériences' },
+  { href: '/', text: 'Projets' },
+  { href: '/', text: 'Études' },
+  { href: '/', text: 'Contact' },
+];
+
 export default function Header() {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
 
@@ -23,32 +38,23 @@ export default function Header() {
           <Image src={pierreDrawing} alt="Dessin simplifié de Pierre" className="logo" />
         </Link>
         <div className={isMenuOpened ? 'links-wrapper active' : 'links-wrapper'}>
-          <Link href="/" onClick={closeMenu} className="link">
-            Accueil
-          </Link>
-          <Link href="" onClick={closeMenu} className="link">
-            À propos
-          </Link>
-          <Link href="" onClick={closeMenu} className="link">
-            Compétences
-          </Link>
-          <Link href="" onClick={closeMenu} className="link">
-            Expériences
-          </Link>
-          <Link href="" onClick={closeMenu} className="link">
-            Projets
-          </Link>
-          <Link href="" onClick={closeMenu} className="link">
-            Études
-          </Link>
-          <Link href="" onClick={closeMenu} className="link">
-            Contact
-          </Link>
+          {navLinks.map((link, index) => {
+            return (
+              <Link
+                href={link.href}
+                onClick={closeMenu}
+                className="link"
+                key={index}
+                style={{ animationDelay: index / 4 + 's' }}>
+                {link.text}
+              </Link>
+            );
+          })}
         </div>
         <button className={isMenuOpened ? 'hamburger-button opened' : 'hamburger-button'} onClick={toggleMenu}>
-          <span className="line"></span>
-          <span className="line"></span>
-          <span className="line"></span>
+          <span className="line" />
+          <span className="line" />
+          <span className="line" />
         </button>
       </nav>
     </header>
