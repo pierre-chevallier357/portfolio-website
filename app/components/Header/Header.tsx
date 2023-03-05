@@ -1,7 +1,7 @@
 'use client';
 import './Header.scss';
 import Image from 'next/image';
-import pierreDrawing from '/public/header/pierre-drawing.png';
+import logo from '/public/header/logo.png';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -35,7 +35,7 @@ export default function Header() {
     <header>
       <nav className="navbar">
         <Link href="/" className="logo-link">
-          <Image src={pierreDrawing} alt="Dessin simplifié de Pierre" className="logo" />
+          <Image src={logo} alt="Dessin simplifié de Pierre" className="logo" width={48} height={48} priority={true} />
         </Link>
         <div className={isMenuOpened ? 'links-wrapper active' : 'links-wrapper'}>
           {navLinks.map((link, index) => {
