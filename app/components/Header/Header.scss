@@ -17,6 +17,8 @@
       animation-name: slide-in;
       animation-duration: 1s;
       animation-fill-mode: backwards;
+      position: relative;
+      z-index: 1;
     }
   }
 
@@ -34,6 +36,8 @@
       animation-name: slide-in;
       animation-duration: 1s;
       animation-fill-mode: backwards;
+      position: relative;
+      z-index: 1;
 
       &:hover {
         color: var(--light-blue);
@@ -141,6 +145,7 @@
 
     .hamburger-button {
       display: block;
+      position: relative;
       z-index: 2;
       animation-name: slide-in;
       animation-duration: 1s;

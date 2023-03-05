@@ -4,7 +4,7 @@ import './Home.scss';
 export default function Home() {
   return (
     <>
-      <h1>Hello world!</h1>
+      <h1 className="title">Hello world!</h1>
       <div id="particles-js" className="particles" />
       <Script src="home/particles/particles.min.js" />
     </>
