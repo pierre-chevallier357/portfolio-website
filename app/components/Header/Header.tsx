@@ -45,7 +45,7 @@ export default function Header() {
                 onClick={closeMenu}
                 className="link"
                 key={index}
-                style={{ animationDelay: index / 4 + 's' }}>
+                style={{ animationDelay: (index + 1) / 4 + 's' }}>
                 {link.text}
               </Link>
             );
