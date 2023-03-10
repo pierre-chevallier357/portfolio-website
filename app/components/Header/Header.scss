@@ -1,3 +1,9 @@
+@mixin slide-in-animation {
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+}
+
 .navbar {
   top: 0;
   display: flex;
@@ -14,11 +20,9 @@
       border-radius: 50%;
       height: 3rem;
       width: auto;
-      animation-name: slide-in;
-      animation-duration: 1s;
-      animation-fill-mode: backwards;
       position: relative;
       z-index: 1;
+      @include slide-in-animation;
     }
   }
 
@@ -33,11 +37,9 @@
       padding: 1rem 1.625rem;
       font-weight: bold;
       transition: all 0.1s ease-in-out;
-      animation-name: slide-in;
-      animation-duration: 1s;
-      animation-fill-mode: backwards;
       position: relative;
       z-index: 1;
+      @include slide-in-animation;
 
       &:hover {
         color: var(--light-blue);
@@ -147,10 +149,8 @@
       display: block;
       position: relative;
       z-index: 2;
-      animation-name: slide-in;
-      animation-duration: 1s;
-      animation-fill-mode: backwards;
       animation-delay: 0.5s;
+      @include slide-in-animation;
     }
   }
 }
