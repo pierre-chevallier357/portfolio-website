@@ -1,8 +1,8 @@
 import './globals.scss';
 
 export const metadata = {
-  title: "Pierre Chevallier's Portfolio",
-  description: "Pierre Chevallier's Portfolio Website",
+  title: 'Pierre Chevallier',
+  description: 'Portfolio de Pierre Chevallier',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
