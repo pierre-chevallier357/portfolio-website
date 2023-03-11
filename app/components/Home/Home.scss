@@ -8,7 +8,52 @@
   mask-image: linear-gradient(to bottom, transparent 3.125rem, black 12.5rem);
 }
 
-.title {
-  position: relative;
-  z-index: 1;
+.presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  min-width: 80vw;
+  max-width: 85vw;
+
+  .title {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    margin: 0;
+
+    .name {
+      background: linear-gradient(180deg, var(--light-blue), var(--light-turquoise));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .job {
+      background: linear-gradient(180deg, var(--light-turquoise), var(--light-green));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      .styles-module_blinkingCursor__yugAC {
+        -webkit-text-fill-color: var(--white);
+      }
+    }
+  }
+
+  .profile-picture {
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .presentation {
+    flex-direction: column;
+
+    .title {
+      font-size: 2.5rem;
+      min-height: 18rem;
+    }
+  }
 }

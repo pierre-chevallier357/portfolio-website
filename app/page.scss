@@ -1,0 +1,13 @@
+.home-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 70vh;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .home-section {
+    min-height: 85vh;
+  }
+}
