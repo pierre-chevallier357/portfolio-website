@@ -45,17 +45,15 @@
         color: var(--light-blue);
       }
 
-      @media screen and (min-width: 769px) {
-        &:last-child {
-          color: var(--light-blue);
-          border: 0.125rem solid var(--light-blue);
-          border-radius: 2rem;
-          padding: 0.7rem 1rem;
-          margin-left: 0.625rem;
+      &:last-child {
+        color: var(--light-blue);
+        border: 0.125rem solid var(--light-blue);
+        border-radius: 2rem;
+        padding: 0.7rem 1rem;
+        margin-left: 0.625rem;
 
-          &:hover {
-            background-color: #61dbfa3d;
-          }
+        &:hover {
+          background-color: #61dbfa3d;
         }
       }
     }
@@ -140,7 +138,7 @@
         }
 
         &:last-child {
-          margin-bottom: 4rem;
+          margin: auto 7rem 4rem;
         }
       }
     }
