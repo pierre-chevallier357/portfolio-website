@@ -18,8 +18,8 @@
 
     .logo {
       border-radius: 50%;
-      height: 3rem;
-      width: auto;
+      height: auto;
+      width: 3rem;
       position: relative;
       z-index: 1;
       @include slide-in-animation;

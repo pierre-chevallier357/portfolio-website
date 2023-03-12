@@ -2,7 +2,7 @@
 import Script from 'next/script';
 import './Home.scss';
 import { Typewriter } from 'react-simple-typewriter';
-import profilePicture from '/public/home/profile_picture.jpg';
+import profilePicture from '/public/home/profile_picture.png';
 import Image from 'next/image';
 
 export default function Home() {
@@ -23,9 +23,10 @@ export default function Home() {
           src={profilePicture}
           alt="Photo de Pierre"
           className="profile-picture"
-          width={350}
-          height={350}
+          width={450}
+          height={450}
           priority={true}
+          placeholder="blur"
         />
       </div>
       <div id="particles-js" className="particles" />

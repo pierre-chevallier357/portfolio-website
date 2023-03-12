@@ -14,8 +14,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  min-width: 80vw;
-  max-width: 85vw;
+  width: 80vw;
 
   .title {
     position: relative;
@@ -41,6 +40,9 @@
   }
 
   .profile-picture {
+    height: auto;
+    width: 28.125rem;
+    max-width: 45vh;
     position: relative;
     z-index: 1;
     border-radius: 50%;
@@ -54,6 +56,10 @@
     .title {
       font-size: 2.5rem;
       min-height: 18rem;
+    }
+
+    .profile-picture {
+      max-width: 90vw;
     }
   }
 }

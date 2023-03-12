@@ -35,7 +35,15 @@ export default function Header() {
     <header>
       <nav className="navbar">
         <Link href="/" className="logo-link">
-          <Image src={logo} alt="Dessin simplifié de Pierre" className="logo" width={48} height={48} priority={true} />
+          <Image
+            src={logo}
+            alt="Dessin simplifié de Pierre"
+            className="logo"
+            width={48}
+            height={48}
+            priority={true}
+            placeholder="blur"
+          />
         </Link>
         <div className={isMenuOpened ? 'links-wrapper active' : 'links-wrapper'}>
           {navLinks.map((link, index) => {
