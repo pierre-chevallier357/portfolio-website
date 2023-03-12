@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 80rem;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 1.75rem;
 
@@ -132,7 +132,7 @@
       }
 
       .link {
-        margin: auto 7rem;
+        margin: auto 0;
 
         &:first-child {
           margin-top: 6.5rem;
