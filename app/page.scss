@@ -6,6 +6,33 @@
   align-items: center;
 }
 
+.loader {
+  width: 25vh;
+  height: 25vh;
+  border: 2vh solid var(--light-turquoise);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 768px) {
   .home-section {
     min-height: 85vh;
