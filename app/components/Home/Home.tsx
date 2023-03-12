@@ -2,7 +2,7 @@
 import Script from 'next/script';
 import './Home.scss';
 import { Typewriter } from 'react-simple-typewriter';
-import profilePicture from '/public/home/profile_picture.png';
+import profilePicture from '/public/home/profile-picture.png';
 import Image from 'next/image';
 
 export default function Home() {
