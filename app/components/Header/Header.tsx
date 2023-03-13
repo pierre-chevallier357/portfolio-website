@@ -25,10 +25,12 @@ export default function Header() {
 
   function toggleMenu(): void {
     setIsMenuOpened((isMenuOpened) => !isMenuOpened);
+    document.body.classList.toggle('lock-scroll');
   }
 
   function closeMenu(): void {
     setIsMenuOpened(false);
+    document.body.classList.remove('lock-scroll');
   }
 
   return (

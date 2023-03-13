@@ -79,27 +79,23 @@
       transition: all 0.3s ease-in-out;
     }
 
-    &.opened {
-      position: fixed;
+    &.opened .line {
+      &:nth-child(1) {
+        -webkit-transform: translateY(0.8125rem) rotate(45deg);
+        -ms-transform: translateY(0.8125rem) rotate(45deg);
+        -o-transform: translateY(0.8125rem) rotate(45deg);
+        transform: translateY(0.8125rem) rotate(45deg);
+      }
 
-      .line {
-        &:nth-child(1) {
-          -webkit-transform: translateY(0.8125rem) rotate(45deg);
-          -ms-transform: translateY(0.8125rem) rotate(45deg);
-          -o-transform: translateY(0.8125rem) rotate(45deg);
-          transform: translateY(0.8125rem) rotate(45deg);
-        }
+      &:nth-child(2) {
+        opacity: 0;
+      }
 
-        &:nth-child(2) {
-          opacity: 0;
-        }
-
-        &:nth-child(3) {
-          -webkit-transform: translateY(-0.8125rem) rotate(-45deg);
-          -ms-transform: translateY(-0.8125rem) rotate(-45deg);
-          -o-transform: translateY(-0.8125rem) rotate(-45deg);
-          transform: translateY(-0.8125rem) rotate(-45deg);
-        }
+      &:nth-child(3) {
+        -webkit-transform: translateY(-0.8125rem) rotate(-45deg);
+        -ms-transform: translateY(-0.8125rem) rotate(-45deg);
+        -o-transform: translateY(-0.8125rem) rotate(-45deg);
+        transform: translateY(-0.8125rem) rotate(-45deg);
       }
     }
   }
@@ -150,11 +146,13 @@
 
     .hamburger-button {
       display: block;
-      top: 1.75rem;
-      right: 1.75rem;
       z-index: 2;
       animation-delay: 0.5s;
       @include slide-in-animation;
     }
+  }
+
+  .lock-scroll {
+    overflow: hidden;
   }
 }
