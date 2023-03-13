@@ -3,6 +3,9 @@ import './globals.scss';
 export const metadata = {
   title: 'Pierre Chevallier',
   description: 'Portfolio de Pierre Chevallier',
+  icons: {
+    shortcut: '/images/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
