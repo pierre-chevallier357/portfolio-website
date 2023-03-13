@@ -2,7 +2,7 @@
 import Script from 'next/script';
 import './Home.scss';
 import { Typewriter } from 'react-simple-typewriter';
-import profilePicture from '/public/home/profile-picture.png';
+import profilePicture from '/public/images/home/profile-picture.png';
 import Image from 'next/image';
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
         />
       </div>
       <div id="particles-js" className="particles" />
-      <Script src="home/particles/particles.min.js" />
+      <Script src="particles/particles.min.js" />
     </>
   );
 }

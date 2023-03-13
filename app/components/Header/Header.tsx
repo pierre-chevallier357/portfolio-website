@@ -1,7 +1,7 @@
 'use client';
 import './Header.scss';
 import Image from 'next/image';
-import logo from '/public/header/logo.png';
+import logo from '/public/images/header/logo.png';
 import Link from 'next/link';
 import { useState } from 'react';
 
