@@ -6,18 +6,19 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 interface NavLink {
+  id: number;
   href: string;
   text: string;
 }
 
 const navLinks: NavLink[] = [
-  { href: '/', text: 'Accueil' },
-  { href: '/', text: 'À propos' },
-  { href: '/', text: 'Compétences' },
-  { href: '/', text: 'Expériences' },
-  { href: '/', text: 'Projets' },
-  { href: '/', text: 'Études' },
-  { href: '/', text: 'Contact' },
+  { id: 1, href: '/', text: 'Accueil' },
+  { id: 2, href: '/', text: 'À propos' },
+  { id: 3, href: '/', text: 'Compétences' },
+  { id: 4, href: '/', text: 'Expériences' },
+  { id: 5, href: '/', text: 'Projets' },
+  { id: 6, href: '/', text: 'Études' },
+  { id: 7, href: '/', text: 'Contact' },
 ];
 
 export default function Header() {
@@ -48,14 +49,14 @@ export default function Header() {
           />
         </Link>
         <div className={isMenuOpened ? 'links-wrapper active' : 'links-wrapper'}>
-          {navLinks.map((link, index) => {
+          {navLinks.map((link) => {
             return (
               <Link
                 href={link.href}
                 onClick={closeMenu}
                 className="link"
-                key={index}
-                style={{ animationDelay: (index + 1) / 4 + 's' }}>
+                key={link.id}
+                style={{ animationDelay: link.id / 4 + 's' }}>
                 {link.text}
               </Link>
             );
