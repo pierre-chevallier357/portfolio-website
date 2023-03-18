@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <div className="hero">
-        <div className="presentation">
+        <div>
           <h1 className="title">
             Hey !
             <br />
@@ -25,8 +25,9 @@ export default function Home() {
               <Typewriter words={['développeur web', 'étudiant en M2 MIAGE']} cursor loop={true} delaySpeed={2000} />
             </span>
           </h1>
-          <button
-            className="about-button"
+          <a
+            className="about-link"
+            href="/"
             onMouseEnter={() => setIsAboutHovered(true)}
             onMouseLeave={() => setIsAboutHovered(false)}>
             À propos
@@ -37,7 +38,7 @@ export default function Home() {
               className="arrow-down"
               priority={true}
             />
-          </button>
+          </a>
         </div>
         <Image
           src={profilePicture}

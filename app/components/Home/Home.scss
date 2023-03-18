@@ -16,55 +16,54 @@
   margin: 0 auto;
   width: 80vw;
 
-  .presentation {
-    .title {
-      position: relative;
-      z-index: 1;
-      font-size: 3rem;
-      margin: 0 0 2rem;
+  .title {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    margin: 0 0 2rem;
 
-      .name {
-        background: linear-gradient(180deg, var(--light-blue), var(--light-turquoise));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      .job {
-        background: linear-gradient(180deg, var(--light-turquoise), var(--light-green));
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-
-        .styles-module_blinkingCursor__yugAC {
-          -webkit-text-fill-color: var(--white);
-        }
-      }
+    .name {
+      background: linear-gradient(180deg, var(--light-blue), var(--light-turquoise));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    .about-button {
-      position: relative;
-      z-index: 1;
-      color: var(--light-blue);
-      border: 0.125rem solid var(--light-blue);
-      border-radius: 2rem;
-      padding: 0.7rem 1rem;
-      margin: 0 1rem 2rem;
-      background-color: transparent;
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      height: 3rem;
-      font-size: 1.1rem;
+    .job {
+      background: linear-gradient(180deg, var(--light-turquoise), var(--light-green));
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
 
-      &:hover {
-        background-color: #61dbfa3d;
-        cursor: pointer;
+      .styles-module_blinkingCursor__yugAC {
+        -webkit-text-fill-color: var(--white);
       }
+    }
+  }
 
-      .arrow-down {
-        width: 1rem;
-        height: auto;
-        margin-left: 0.5rem;
-      }
+  .about-link {
+    position: relative;
+    z-index: 1;
+    color: var(--light-blue);
+    border: 0.125rem solid var(--light-blue);
+    border-radius: 2rem;
+    padding: 0rem 1.2rem;
+    margin: 0 1rem 2rem;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    height: 3rem;
+    width: fit-content;
+    font-size: 1.1rem;
+
+    &:hover {
+      background-color: #61dbfa3d;
+      cursor: pointer;
+    }
+
+    .arrow-down {
+      width: 1rem;
+      height: auto;
+      margin-left: 0.5rem;
     }
   }
 
@@ -82,19 +81,17 @@
   .hero {
     flex-direction: column;
 
-    .presentation {
-      .title {
-        font-size: 2.5rem;
-        min-height: 15rem;
-      }
+    .title {
+      font-size: 2.5rem;
+      min-height: 15rem;
+    }
 
-      .about-button {
-        margin: 0 auto 2rem;
-      }
+    .about-link {
+      margin: 0 auto 2rem;
     }
 
     .profile-picture {
-      max-width: 75vw;
+      max-width: 70vw;
     }
   }
 }
