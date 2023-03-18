@@ -1,4 +1,11 @@
 body {
+  --white: #f6f9fc;
+  --light-blue: #56dcfc;
+  --light-turquoise: #82ece3;
+  --light-green: #adfcc9;
+  --dark-blue: #0b1a2e;
+  --transparent-light-blue: #61dbfa3d;
+
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial,
     Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   background: radial-gradient(ellipse at bottom, var(--dark-blue) 0%, #000000 100%);
@@ -6,11 +13,4 @@ body {
   color: var(--white);
   -webkit-font-smoothing: antialiased;
   margin: 0;
-
-  --white: #f6f9fc;
-  --light-blue: #56dcfc;
-  --light-turquoise: #82ece3;
-  --light-green: #adfcc9;
-  --dark-blue: #0b1a2e;
-  --transparent-light-blue: #61dbfa3d;
 }
