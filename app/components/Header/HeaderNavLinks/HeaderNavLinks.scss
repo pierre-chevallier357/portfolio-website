@@ -13,7 +13,7 @@
     transition: all 0.1s ease-in-out;
     position: relative;
     z-index: 1;
-    @include slide-in-animation;
+    @include slide-down-animation;
 
     &:hover {
       color: var(--light-blue);
@@ -110,7 +110,7 @@
       display: block;
       z-index: 2;
       animation-delay: 0.5s;
-      @include slide-in-animation;
+      @include slide-down-animation;
     }
   }
 

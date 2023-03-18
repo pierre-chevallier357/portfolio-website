@@ -1,5 +1,5 @@
-@mixin slide-in-animation {
-  animation-name: slide-in;
+@mixin slide-down-animation {
+  animation-name: slide-down;
   animation-duration: 1s;
   animation-fill-mode: backwards;
 }
@@ -21,11 +21,11 @@
       width: 3rem;
       position: relative;
       z-index: 1;
-      @include slide-in-animation;
+      @include slide-down-animation;
     }
   }
 
-  @keyframes slide-in {
+  @keyframes slide-down {
     0% {
       transform: translateY(-1rem);
       opacity: 0;
