@@ -1,4 +1,4 @@
-.links-wrapper {
+.presentation-links-wrapper {
   display: flex;
   margin-bottom: 2rem;
 
@@ -59,7 +59,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .links-wrapper {
+  .presentation-links-wrapper {
     align-items: center;
     margin: 0 auto 2rem;
     justify-content: space-evenly;

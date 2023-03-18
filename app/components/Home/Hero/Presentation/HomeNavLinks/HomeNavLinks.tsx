@@ -5,16 +5,17 @@ import gitHub from '/public/images/home/github.svg';
 import linkedIn from '/public/images/home/linkedin.svg';
 import { useState } from 'react';
 import Image from 'next/image';
-import './NavigationLinks.scss';
+import './HomeNavLinks.scss';
+import Link from 'next/link';
 
-export default function NavigationLinks() {
+export default function HomeNavLinks() {
   const [isAboutHovered, setIsAboutHovered] = useState(false);
   const [isLinkedInHovered, setIsLinkedInHovered] = useState(false);
   const [isGitHubHovered, setIsGitHubHovered] = useState(false);
 
   return (
-    <div className="links-wrapper">
-      <a
+    <div className="presentation-links-wrapper">
+      <Link
         className="about-link"
         href="/"
         onMouseEnter={() => setIsAboutHovered(true)}
@@ -27,8 +28,8 @@ export default function NavigationLinks() {
           className="arrow-down"
           priority={true}
         />
-      </a>
-      <a
+      </Link>
+      <Link
         href="https://www.linkedin.com/in/pierre-chevallier/"
         target="_blank"
         className="external-link"
@@ -36,8 +37,8 @@ export default function NavigationLinks() {
         onMouseLeave={() => setIsLinkedInHovered(false)}>
         <Image src={linkedIn} alt="Icône LinkedIn" className="social-icon hovered" width={24} priority={true} />
         {isLinkedInHovered && 'LinkedIn'}
-      </a>
-      <a
+      </Link>
+      <Link
         href="https://github.com/pierre-chevallier357"
         target="_blank"
         className="external-link"
@@ -45,7 +46,7 @@ export default function NavigationLinks() {
         onMouseLeave={() => setIsGitHubHovered(false)}>
         <Image src={gitHub} alt="Icône GitHub" className="social-icon" width={24} priority={true} />
         {isGitHubHovered && 'GitHub'}
-      </a>
+      </Link>
     </div>
   );
 }
