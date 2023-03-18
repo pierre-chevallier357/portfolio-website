@@ -33,6 +33,23 @@
   }
 }
 
+@mixin slide-up-animation {
+  animation-name: slide-up;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(20vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .home-section {
     min-height: 85vh;
