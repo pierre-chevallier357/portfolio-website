@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  height: calc(90vh - 6.5rem);
+  min-height: calc(100vh - 6.5rem);
   align-items: center;
 }
 
@@ -52,6 +52,6 @@
 
 @media screen and (max-width: 768px) {
   .home-section {
-    min-height: 85vh;
+    min-height: 90vh;
   }
 }
