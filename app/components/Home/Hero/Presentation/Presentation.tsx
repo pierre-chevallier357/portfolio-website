@@ -4,7 +4,7 @@ import './Presentation.scss';
 
 export default function Presentation() {
   return (
-    <div>
+    <article>
       <h1 className="title">
         Hey !
         <br />
@@ -13,6 +13,6 @@ export default function Presentation() {
         Je suis <SelfWritingText />
       </h1>
       <HomeNavLinks />
-    </div>
+    </article>
   );
 }
