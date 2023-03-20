@@ -4,7 +4,8 @@ export const metadata = {
   title: 'Pierre Chevallier',
   description: 'Portfolio de Pierre Chevallier',
   icons: {
-    shortcut: '/images/favicon/favicon.ico',
+    shortcut: '/favicon.png',
+    icon: '/favicon.png',
   },
 };
 
