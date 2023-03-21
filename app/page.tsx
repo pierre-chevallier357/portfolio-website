@@ -14,6 +14,7 @@ export default function Page() {
         <section className="about-section">
           <About />
         </section>
+        <div className="separation-line" />
       </main>
     </>
   );
