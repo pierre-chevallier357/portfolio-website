@@ -9,7 +9,7 @@ export default function Hero() {
       <Presentation />
       <Image
         src={profilePicture}
-        alt="Photo de Pierre"
+        alt="Portrait de Pierre"
         className="profile-picture"
         width={450}
         height={450}
