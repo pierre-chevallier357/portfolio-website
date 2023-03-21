@@ -6,6 +6,12 @@
   align-items: center;
 }
 
+.about-section {
+  display: flex;
+  justify-content: center;
+  background-color: var(--white);
+}
+
 .loader {
   width: 25vh;
   height: 25vh;
