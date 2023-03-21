@@ -1,7 +1,8 @@
 .about-article {
-  height: 100%;
-  min-height: 100vh;
-  width: 70vw;
+  height: fit-content;
+  min-height: 80vh;
+  max-width: 75vw;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +11,7 @@
 
   .about-me-title {
     font-size: 2.5rem;
-    margin: 0 0 2.5rem;
+    margin: 1rem 0 2.5rem;
   }
 
   .about-content {
@@ -18,8 +19,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 2rem;
-    margin-bottom: 2rem;
+    gap: 3rem;
 
     .presentation-paragraph {
       font-size: 1.25rem;
@@ -27,15 +27,23 @@
     }
 
     .about-image {
-      max-height: 50vh;
+      max-height: 60vh;
       border-radius: 3rem;
       object-fit: cover;
       object-position: center top;
+      position: relative;
+      z-index: 1;
     }
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1200px) {
+  .about-article {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .about-article {
     height: 100%;
     width: 90vw;
@@ -54,7 +62,8 @@
       }
 
       .about-image {
-        max-height: 50vh;
+        max-height: 45vh;
+        max-width: 80vw;
       }
     }
   }
