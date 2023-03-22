@@ -18,8 +18,16 @@ export default function About() {
               domaine qui mêlait 2 de mes passions : l'informatique et le design.
             </p>
             <p className="presentation-paragraph">
+              J'ai étudié en master MIAGE pour en apprendre plus sur l'informatique, l'ingénierie, le management et la
+              gestion d'entreprise.
+            </p>
+            <p className="presentation-paragraph">
               Dans la vie, je suis quelqu'un d'optimiste, dévoué, rigoureux et qui adore apprendre. Je me donne à fond
               pour développer mes compétences dans ce domaine qui m'anime : le développement web front-end.
+            </p>
+            <p className="presentation-paragraph">
+              Je touche à toutes sortes de technologies, mais suis en particulier focalisé sur JavaScript, TypeScript,
+              Angular, Next.js, React et Vue.js.
             </p>
           </div>
           <Image
