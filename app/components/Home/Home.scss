@@ -7,3 +7,9 @@
   -webkit-mask-image: linear-gradient(to bottom, transparent 3.125rem, black 12.5rem);
   mask-image: linear-gradient(to bottom, transparent 3.125rem, black 12.5rem);
 }
+
+@media screen and (max-width: 380px) {
+  .particles {
+    min-height: 100vh;
+  }
+}
