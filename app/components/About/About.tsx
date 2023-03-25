@@ -1,14 +1,14 @@
 import './About.scss';
 import Image from 'next/image';
-import portrait from '/public/images/about/about-image.jpg';
-import user from '/public/images/about/user.svg';
+import portraitImage from '/public/images/about/about-image.jpg';
+import userIcon from '/public/images/about/user.svg';
 
 export default function About() {
   return (
     <>
       <article className="about-article">
         <header className="about-header">
-          <Image src={user} alt="Icône utilisateur" className="user-icon" width={35} height={35} priority={true} />
+          <Image src={userIcon} alt="Icône utilisateur" className="user-icon" width={35} height={35} priority={true} />
           <h1 className="about-me-title">À propos</h1>
         </header>
         <div className="about-content">
@@ -35,7 +35,7 @@ export default function About() {
             </p>
           </div>
           <Image
-            src={portrait}
+            src={portraitImage}
             alt="Pierre souriant avec des lunettes de soleil"
             className="about-image"
             height={450}

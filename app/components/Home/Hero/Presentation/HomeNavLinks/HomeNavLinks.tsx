@@ -1,8 +1,8 @@
 'use client';
-import chevronDown from '/public/images/home/chevron-down-solid.svg';
-import arrowDown from '/public/images/home/arrow-down-solid.svg';
-import gitHub from '/public/images/home/github.svg';
-import linkedIn from '/public/images/home/linkedin.svg';
+import chevronDownIcon from '/public/images/home/chevron-down-solid.svg';
+import arrowDownIcon from '/public/images/home/arrow-down-solid.svg';
+import gitHubIcon from '/public/images/home/github.svg';
+import linkedInIcon from '/public/images/home/linkedin.svg';
 import { useState } from 'react';
 import Image from 'next/image';
 import './HomeNavLinks.scss';
@@ -22,7 +22,7 @@ export default function HomeNavLinks() {
         onMouseLeave={() => setIsAboutHovered(false)}>
         À propos
         <Image
-          src={isAboutHovered ? arrowDown : chevronDown}
+          src={isAboutHovered ? arrowDownIcon : chevronDownIcon}
           alt="Flèche pointant vers le bas"
           width={16}
           className="arrow-down"
@@ -35,7 +35,7 @@ export default function HomeNavLinks() {
         className="external-link"
         onMouseEnter={() => setIsLinkedInHovered(true)}
         onMouseLeave={() => setIsLinkedInHovered(false)}>
-        <Image src={linkedIn} alt="Icône LinkedIn" className="social-icon hovered" width={24} priority={true} />
+        <Image src={linkedInIcon} alt="Icône LinkedIn" className="social-icon hovered" width={24} priority={true} />
         {isLinkedInHovered && 'LinkedIn'}
       </Link>
       <Link
@@ -44,7 +44,7 @@ export default function HomeNavLinks() {
         className="external-link"
         onMouseEnter={() => setIsGitHubHovered(true)}
         onMouseLeave={() => setIsGitHubHovered(false)}>
-        <Image src={gitHub} alt="Icône GitHub" className="social-icon" width={24} priority={true} />
+        <Image src={gitHubIcon} alt="Icône GitHub" className="social-icon" width={24} priority={true} />
         {isGitHubHovered && 'GitHub'}
       </Link>
     </div>
