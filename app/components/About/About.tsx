@@ -7,10 +7,10 @@ export default function About() {
   return (
     <>
       <article className="about-article">
-        <h1 className="about-me-title">
-          <Image src={user} alt="Icône utilisateur" className="user-icon" width={35} height={35} priority={true} />À
-          propos
-        </h1>
+        <header className="about-header">
+          <Image src={user} alt="Icône utilisateur" className="user-icon" width={35} height={35} priority={true} />
+          <h1 className="about-me-title">À propos</h1>
+        </header>
         <div className="about-content">
           <div>
             <p className="presentation-paragraph">

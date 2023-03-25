@@ -8,11 +8,15 @@
   align-items: center;
   color: var(--dark-gray);
 
-  .about-me-title {
-    font-size: 2.5rem;
-    margin: 1rem 0 2.5rem;
+  .about-header {
     display: flex;
     align-items: center;
+    margin: 2.5rem 0 1.5rem;
+
+    .about-me-title {
+      font-size: 2.5rem;
+      margin: 0;
+    }
 
     .user-icon {
       height: 2.1875rem;
