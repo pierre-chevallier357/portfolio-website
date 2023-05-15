@@ -1,7 +1,9 @@
+'use client';
 import './About.scss';
 import Image from 'next/image';
 import portraitImage from '/public/images/about/about-image.jpg';
 import userIcon from '/public/images/about/user.svg';
+import { motion } from 'framer-motion';
 
 export default function About() {
   return (
@@ -12,7 +14,10 @@ export default function About() {
           <h1 className="about-me-title">À propos</h1>
         </header>
         <div className="about-content">
-          <div>
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.5 }}>
             <p className="presentation-paragraph">
               Hey ! Je m'appelle Pierre Chevallier, j'ai 22 ans et je suis développeur web front-end à Grenoble.
             </p>
@@ -33,15 +38,20 @@ export default function About() {
               Je touche à toutes sortes de technologies, mais suis en particulier focalisé sur JavaScript, TypeScript,
               Angular, Next.js, React et Vue.js.
             </p>
-          </div>
-          <Image
-            src={portraitImage}
-            alt="Pierre souriant avec des lunettes de soleil"
-            className="about-image"
-            height={450}
-            priority={true}
-            placeholder="blur"
-          />
+          </motion.div>
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.5 }}>
+            <Image
+              src={portraitImage}
+              alt="Pierre souriant avec des lunettes de soleil"
+              className="about-image"
+              height={450}
+              priority={true}
+              placeholder="blur"
+            />
+          </motion.div>
         </div>
       </article>
     </>
