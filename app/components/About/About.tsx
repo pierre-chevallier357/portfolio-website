@@ -15,13 +15,13 @@ export default function About() {
       <div className="about-content">
         <motion.div initial={{ y: 100, opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ duration: 1.5 }}>
           <p className="presentation-paragraph">
-            Hey ! Je m'appelle <b>Pierre Chevallier</b> 😁, j'ai 22 ans et je suis <b>développeur web front-end</b> 👨‍💻 à
-            Grenoble.
+            Salut ! Je m'appelle <b>Pierre Chevallier</b> 😁, j'ai 22 ans et je suis <b>développeur web front-end</b> 👨‍💻
+            à Grenoble.
           </p>
           <p className="presentation-paragraph">
-            Je suis passionné de développement web, fan de design, de nouvelles technologies et de développement
-            personnel. J'ai découvert le développement front-end lors de mes études, et suis tombé amoureux de ce
-            domaine qui mêlait 2 de mes passions : l'informatique 💻 et le design 🎨.
+            Je suis passionné de développement web, fan de design et de nouvelles technologies mais aussi de
+            développement personnel et de sport. J'ai découvert le développement front-end lors de mes études, et suis
+            tombé amoureux de ce domaine qui mêlait 2 de mes passions : l'informatique 💻 et le design 🎨.
           </p>
           <p className="presentation-paragraph">
             J'ai étudié en master MIAGE pour en apprendre plus sur l'informatique, l'ingénierie, le management et la
