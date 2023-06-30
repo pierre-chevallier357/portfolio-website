@@ -19,9 +19,9 @@ export default function About() {
             à Grenoble.
           </p>
           <p className="presentation-paragraph">
-            Je suis passionné de développement web, fan de design et de nouvelles technologies mais aussi de
-            développement personnel et de sport. J'ai découvert le développement front-end lors de mes études, et suis
-            tombé amoureux de ce domaine qui mêlait 2 de mes passions : l'informatique 💻 et le design 🎨.
+            Je suis passionné de développement web, fan de design mais aussi de nouvelles technologies et de
+            développement personnel. J'ai découvert le développement front-end lors de mes études, et suis tombé
+            amoureux de ce domaine qui mêlait 2 de mes passions : l'informatique 💻 et le design 🎨.
           </p>
           <p className="presentation-paragraph">
             J'ai étudié en master MIAGE pour en apprendre plus sur l'informatique, l'ingénierie, le management et la
